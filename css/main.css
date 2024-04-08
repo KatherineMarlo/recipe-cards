@@ -95,18 +95,26 @@ body{
 	line-height: 18px;
 }
 
+.content-wrapper {
+  background: white;
+}
+
 
 /****** maim Styles ******/
+.bold-text {
+  font-weight: bold;
+}
 
 h1 {
   font-family: "Young Serif", serif;
-  color: hsl(14, 45%, 36%);
 }
 
 h2 {
   font-family: "Young Serif", serif;
   color: hsl(14, 45%, 36%);
 }
+
+
 
 /* ==========================================================================
    Helper classes
