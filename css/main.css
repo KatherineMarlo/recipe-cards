@@ -99,7 +99,7 @@ body{
 
 .content-wrapper {
   background: white;
-  width: 375px;
+  width: 100%;
   display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
@@ -108,7 +108,7 @@ body{
 
 /****** maim Styles ******/
 .hero-img img{
-  max-width: 375px;
+  width: 100%;
 }
 
 .recipe {
@@ -172,6 +172,24 @@ ul li, ol li {
   border-top: 1px solid hsl(30, 18%, 87%);
   border-bottom: 1px solid hsl(30, 18%, 87%);
 }
+
+.nutrition-facts {
+  display: flex;
+  flex-direction: column;
+}
+
+.nutrition-fact {
+ display: flex;
+ justify-content: space-around;
+ border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition-amount {
+ margin-left: 10px;
+ color: hsl(14, 45%, 36%);
+ font-weight: bold;
+}
+
 
 
 
@@ -263,9 +281,26 @@ ul li, ol li {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+   @media only screen and (min-width:768px) {
+    /*Tablet styles here*/
+  
+    /* General styles */
+body {
+  border-radius: 15px;
 }
+
+    .content-wrapper {
+      width: 40%;
+      margin: 50px 0;
+    }
+  }
+
+  @media only screen and (min-width:1350px) {
+    .content-wrapper {
+      width: 40%;
+
+    }
+  }
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
